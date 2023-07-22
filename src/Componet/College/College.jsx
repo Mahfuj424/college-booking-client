@@ -1,6 +1,6 @@
 
 import img4 from '../../Home/Banner/images/banner4.jpg'
-const Colleges = () => {
+const College = () => {
      return (
           <div>
                <h1 className='text-green-500 text-center my-3 text-4xl'>Colleges</h1>
@@ -40,8 +40,4 @@ const Colleges = () => {
      );
 };
 
-
-
-   
-
-export default Colleges;
+export default College;
