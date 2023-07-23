@@ -10,13 +10,13 @@ const Banner = () => {
         <div>
             <Carousel>
                 <div>
-                    <img src={img4} />
+                    <img className="max-h-screen" src={img4} />
                 </div>
                 <div>
-                    <img src={img1} />
+                    <img className="max-h-screen" src={img1} />
                 </div>
                 <div>
-                    <img src={img6} />
+                    <img className="max-h-screen" src={img6} />
                 </div>
             </Carousel>
         </div>

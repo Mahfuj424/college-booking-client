@@ -9,7 +9,7 @@ const Footer = () => {
         <footer className=" bg-green-100">
             <div className="footer p-10 bg-green-100 text-base-content">
                 <div>
-                    <BsBook className='h-14 w-14 text-green-400' />
+                    <BsBook className='h-14 w-14 text-cyan-400' />
                     <p className='text-lg'>College Booking <br /> ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </div>
                 <div>
@@ -43,7 +43,7 @@ const Footer = () => {
                         </label>
                         <div className="relative">
                             <input type="text" placeholder="username@site.com" className="input input-bordered w-full pr-16" />
-                            <button className="btn btn-success absolute text-xs top-0 right-0 rounded-l-none">Subscribe</button>
+                            <button className="btn btn-info absolute text-xs top-0 right-0 rounded-l-none">Subscribe</button>
                         </div>
                     </div>
                     <div className="grid grid-flow-col gap-4 w-48 ml-3 mt-5">

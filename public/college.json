@@ -1,0 +1,116 @@
+[
+  {
+    "id":"1",
+    "college_image": "https://i.ibb.co/bK6WPFP/versity1.jpg",
+    "college_name": "University of California",
+    "admission_dates": {
+      "fall": "September 2023",
+      "spring": "January 2024"
+    },
+    "rating": 4.5,
+    "events": [
+      "Orientation Day",
+      "Annual Cultural Fest",
+      "Sports Meet",
+      "Career Fair"
+    ],
+    "research_history": "Established in 1975, ABC College has a rich research history in fields like Computer Science, Physics, and Biology.",
+    "sports": ["Basketball", "Football", "Swimming", "Tennis", "Volleyball"]
+  },
+  {
+    "id":"2",
+    "college_image": "https://i.ibb.co/vzGrRH5/versity2.jpg",
+    "college_name": "University of Cambridge",
+    "admission_dates": {
+      "fall": "August 2023",
+      "spring": "January 2024"
+    },
+    "rating": 4.8,
+    "events": [
+      "Welcome Week",
+      "International Food Festival",
+      "Research Symposium",
+      "Job Fair"
+    ],
+    "research_history": "Founded in 1860, XYZ University has a long-standing tradition of research excellence in History, Literature, and Economics.",
+    "sports": [
+      "Soccer",
+      "Badminton",
+      "Cricket",
+      "Track & Field",
+      "Table Tennis"
+    ]
+  },
+  {
+    "id":"3",
+    "college_image": "https://i.ibb.co/6D9qcb9/varsity3.jpg",
+    "college_name": "University of Tokyo ",
+    "admission_dates": {
+      "fall": "October 2023",
+      "spring": "February 2024"
+    },
+    "rating": 4.2,
+    "events": [
+      "Freshman Welcome Party",
+      "Tech Expo",
+      "Cultural Diversity Day",
+      "Job Placement Week"
+    ],
+    "research_history": "PQR Institute is renowned for its cutting-edge research in Engineering, Chemistry, and Environmental Studies.",
+    "sports": ["Hockey", "Golf", "Archery", "Rugby", "Chess"]
+  },
+  {
+    "id":"4",
+    "college_image": "https://i.ibb.co/3sVk8Mt/varsity4.jpg",
+    "college_name": "University of Sydney ",
+    "admission_dates": {
+      "fall": "August 2023",
+      "spring": "January 2024"
+    },
+    "rating": 4.6,
+    "events": [
+      "Freshers' Night",
+      "Science Exhibition",
+      "Literary Fest",
+      "Job Fair"
+    ],
+    "research_history": "LMN University has a rich research tradition in fields like Medicine, Psychology, and Sociology.",
+    "sports": ["Baseball", "Karate", "Sailing", "Taekwondo", "Yoga"]
+  },
+  {
+    "id":"5",
+    "college_image": "https://i.ibb.co/RN7hfRX/varsity5.jpg",
+    "college_name": "University of Cape Town",
+    "admission_dates": {
+      "fall": "September 2023",
+      "spring": "January 2024"
+    },
+    "rating": 4.0,
+    "events": [
+      "Freshman Orientation",
+      "Art and Music Festival",
+      "Innovation Summit",
+      "Career Expo"
+    ],
+    "research_history": "EFG College is a hub of innovation and has contributed significantly to research in Art, Design, and Media Studies.",
+    "sports": ["Fencing", "Water Polo", "Cycling", "Wrestling", "Gymnastics"]
+  },
+  {
+    "id":"6",
+    "college_image": "https://i.ibb.co/X49NWVc/versity6.jpg",
+    "college_name": "University of São Paulo",
+    "admission_dates": {
+      "fall": "October 2023",
+      "spring": "February 2024"
+    },
+    "rating": 4.4,
+    "events": [
+      "Orientation Week",
+      "Science Fair",
+      "Global Cultural Festival",
+      "Job Fair"
+    ],
+    "research_history": "HIJ Academy is known for its impactful research in Education, Linguistics, and Social Sciences.",
+    "sports": ["Squash", "Rock Climbing", "Skiing", "Surfing", "Horse Riding"]
+  }
+]
