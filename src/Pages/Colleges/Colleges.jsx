@@ -1,8 +1,10 @@
 
-import {  useContext, useEffect, useState } from 'react';
+import { useContext, useEffect, useState } from 'react';
 // import Swal from 'sweetalert2';
 import { Link, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../Componet/AuthProvider/AuthProvider';
+import { HiOutlineStar, HiStar } from 'react-icons/hi';
+import Rating from 'react-rating';
 // import Rating from 'react-rating';
 // import { HiOutlineStar, HiStar, } from "react-icons/hi";
 const Colleges = () => {
@@ -33,23 +35,24 @@ const Colleges = () => {
                <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container my-5'>
                     {
                          colleges.map(college => {
-                              return <div key={college.id} className="card card-compact w-96 bg-base-100 shadow-xl">
+                              return <div key={college._id} className="card card-compact w-96 bg-base-100 shadow-xl">
                                    <figure><img src={college.college_image} alt="Shoes" /></figure>
                                    <div className="card-body">
                                         <h2 className="card-title">{college.college_name}</h2>
                                         <p className='font-bold'>Admission Dates:</p>
                                         <p>{college.admission_dates.fall}</p>
                                         <p>{college.admission_dates.spring}</p>
-                                        {/* <Rating
+                                        <Rating
+                                             className='text-yellow-500'
                                              readonly
-                                             placeholderRating={rating}
+                                             placeholderRating={college.rating}
                                              emptySymbol={<HiOutlineStar />}
                                              placeholderSymbol={<HiStar />}
                                              fullSymbol={<HiStar />}
-                                        /> */}
+                                        />
                                         <div className="card-actions justify-center">
-                                             <Link>
-                                                  <button onClick={()=>handleCollegeDetails(college.id)} className='button'>Details</button>
+                                             <Link to={`/collegeDetails/${college._id}`}>
+                                                  <button onClick={handleCollegeDetails} className='button'>Details</button>
                                              </Link>
                                         </div>
                                    </div>

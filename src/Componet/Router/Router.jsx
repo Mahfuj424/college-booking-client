@@ -9,7 +9,7 @@ import Login from "../../Pages/Login/Login";
 import Register from "../../Pages/Register/Register";
 import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
-// import CollegeDetails from "../../Pages/CollegeDetails/CollegeDetails";
+import CollegeDetails from "../../Pages/CollegeDetails/CollegeDetails";
 
 const Router = createBrowserRouter([
      {
@@ -29,11 +29,11 @@ const Router = createBrowserRouter([
                     path: '/admission', 
                     element: <Admission/>
                },
-               // {
-               //      path: '/collegeDetails/:id',
-               //      element: <PrivetRoute><CollegeDetails /></PrivetRoute>,
-               //      loader: ()=> fetch(`/public/college.json`)
-               // },
+               {
+                    path: '/collegeDetails/:id',
+                    element: <PrivetRoute><CollegeDetails /></PrivetRoute>,
+                    loader: ()=> fetch(`/public/college.json`)
+               },
                {
                     path: 'login',
                     element: <Login/>
