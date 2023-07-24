@@ -1,4 +1,4 @@
-import { useContext, useState } from 'react';
+import { useContext } from 'react';
 import { Link, NavLink } from 'react-router-dom';
 import { RxAvatar } from 'react-icons/rx'
 import { BiArrowFromLeft } from 'react-icons/bi'
@@ -7,15 +7,15 @@ import { BsBook } from "react-icons/bs";
 const Navbar = () => {
      const { user, logOut } = useContext(AuthContext)
 
-     const [college, setCollege] = useState([])
+     // const [college, setCollege] = useState([])
 
-     const [searchText, setSearchText] = useState('')
+     // const [searchText, setSearchText] = useState('')
 
-     const handleSearch = () => {
-          fetch(`https://aeroplane-toy-server.vercel.app/searchText?search=${searchText}`)
-              .then(res => res.json())
-              .then(data => setCollege(data))
-      };
+     // const handleSearch = () => {
+     //      fetch(`https://aeroplane-toy-server.vercel.app/searchText?search=${searchText}`)
+     //          .then(res => res.json())
+     //          .then(data => setCollege(data))
+     //  };
 
 
 
@@ -25,9 +25,9 @@ const Navbar = () => {
           <p className='text-lg hover:text-cyan-500 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-cyan-500 border-cyan-500' : ''} to='/admission'>Admission</NavLink>}</p>
           <p className='text-lg hover:text-cyan-500 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-cyan-500 border-cyan-500' : ''} to='/myCollege'>My College</NavLink>}</p>
           
-          <div className="form-control grid grid-cols-2">
-               <input onChange={(e) => setSearchText(e.target.value)} type="text" placeholder="Search" className="input input-bordered w-[150px] md:w-auto" />
-               <input onClick={handleSearch} className='button w-[100px]' type="submit" value="Search" />
+          <div className="form-control">
+               <input type="text" placeholder="Search" className="input input-bordered w-[150px] md:w-auto" />
+               {/* <input onClick={handleSearch} className='button w-[100px]' type="submit" value="Search" /> */}
           </div>
           <p className='text-lg hover:text-cyan-500 transition-all '> {
                user ?

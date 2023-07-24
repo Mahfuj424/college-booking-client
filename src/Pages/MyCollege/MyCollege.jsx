@@ -77,6 +77,7 @@ const MyCollege = () => {
                               /> */}
                                    <div className="form-control">
                                         <input type="number" name="review" id="review" className="border-cyan-400 border-2 rounded py-2 px-3 w-full" placeholder="Review Hare" />
+                                        <button className="button">Add</button>
                                    </div>
                               </div>
                          </div>
