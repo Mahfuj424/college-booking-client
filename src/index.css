@@ -6,5 +6,5 @@
      @apply max-w-7xl mx-auto
 }
 .button{
-     @apply btn btn-outline transition border-0 border-b-4 hover:bg-cyan-400 hover:text-black hover:border-none text-cyan-400
+     @apply btn btn-outline transition border-0 border-b-4 text-black border-cyan-400 hover:bg-cyan-400 hover:text-black hover:border-none
 }
