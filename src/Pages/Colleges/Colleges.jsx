@@ -15,7 +15,7 @@ const Colleges = () => {
      const navigate = useNavigate()
 
      useEffect(() => {
-          fetch('../../../public/college.json')
+          fetch('http://localhost:5000/college')
                .then(res => res.json())
                .then(data => setColleges(data))
      }, [])

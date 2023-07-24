@@ -1,6 +1,6 @@
 [
   {
-    "_id":"1",
+    
     "college_image": "https://i.ibb.co/bK6WPFP/versity1.jpg",
     "college_name": "University of California",
     "admission_dates": {
@@ -19,7 +19,7 @@
     "sports": ["Basketball", "Football", "Swimming", "Tennis", "Volleyball"]
   },
   {
-    "_id":"2",
+    
     "college_image": "https://i.ibb.co/vzGrRH5/versity2.jpg",
     "college_name": "University of Cambridge",
     "admission_dates": {
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "_id":"3",
+    
     "college_image": "https://i.ibb.co/6D9qcb9/varsity3.jpg",
     "college_name": "University of Tokyo ",
     "admission_dates": {
@@ -63,7 +63,7 @@
     "sports": ["Hockey", "Golf", "Archery", "Rugby", "Chess"]
   },
   {
-    "_id":"4",
+    
     "college_image": "https://i.ibb.co/3sVk8Mt/varsity4.jpg",
     "college_name": "University of Sydney ",
     "admission_dates": {
@@ -82,7 +82,7 @@
     "sports": ["Baseball", "Karate", "Sailing", "Taekwondo", "Yoga"]
   },
   {
-    "_id":"5",
+    
     "college_image": "https://i.ibb.co/RN7hfRX/varsity5.jpg",
     "college_name": "University of Cape Town",
     "admission_dates": {
@@ -101,7 +101,7 @@
     "sports": ["Fencing", "Water Polo", "Cycling", "Wrestling", "Gymnastics"]
   },
   {
-    "_id":"6",
+    
     "college_image": "https://i.ibb.co/X49NWVc/versity6.jpg",
     "college_name": "University of São Paulo",
     "admission_dates": {

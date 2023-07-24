@@ -7,10 +7,11 @@ const College = () => {
      console.log(allCollege);
 
      useEffect(() => {
-          fetch(`/public/college.json`)
+          fetch(`http://localhost:5000/college`)
                .then(res => res.json())
                .then(data => setAllCollege(data))
      }, [])
+     
 
 
      const [showAll, setShowAll] = useState(false);

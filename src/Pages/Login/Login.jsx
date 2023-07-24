@@ -81,14 +81,14 @@ const Login = () => {
                                 </label>
                             </div>
                             <div className="form-control mt-6">
-                                <button className="btn btn-primary">Login</button>
+                                <button className="btn btn-info">Login</button>
                             </div>
                             <p>Are you new user? <Link className='btn-link' to='/register'>Please Register</Link></p>
                             <div>
-                                <button className='btn btn-outline w-full hover:bg-blue-700' onClick={handleGoogleUser}><span><FcGoogle/></span>Google</button>
+                                <button className='button w-full' onClick={handleGoogleUser}><span><FcGoogle/></span>Google</button>
                             </div>
                             <div>
-                                <button className='btn btn-outline hover:bg-blue-700 w-full' onClick={handleGithubUser}><span><FiGithub/></span>GitHub</button>
+                                <button className='button w-full' onClick={handleGithubUser}><span><FiGithub/></span>GitHub</button>
                             </div>
                         </form>
                     </div>

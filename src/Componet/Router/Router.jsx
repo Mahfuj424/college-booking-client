@@ -11,6 +11,7 @@ import ErrorPage from "../../Pages/ErrorPage/ErrorPage";
 import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import CollegeDetails from "../../Pages/CollegeDetails/CollegeDetails";
 import AdmissionProcess from "../../Pages/AdmissionProcess/AdmissionProcess";
+import MyCollege from "../../Pages/MyCollege/MyCollege";
 
 const Router = createBrowserRouter([
      {
@@ -31,9 +32,13 @@ const Router = createBrowserRouter([
                     element: <Admission/>
                },
                {
+                    path: `/myCollege`,
+                    element: <MyCollege/>
+               },
+               {
                     path: '/collegeDetails/:id',
                     element: <PrivetRoute><CollegeDetails /></PrivetRoute>,
-                    loader: ()=> fetch(`/public/college.json`)
+                    loader: ()=> fetch(`http://localhost:5000/college`)
                },
                {
                     path: '/admissionProcess/:id',

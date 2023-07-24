@@ -1,5 +1,5 @@
 import { useContext } from "react";
-import { useLoaderData, useParams } from "react-router-dom";
+import { useLoaderData, useNavigate, useParams } from "react-router-dom";
 import { AuthContext } from "../../Componet/AuthProvider/AuthProvider";
 import Swal from "sweetalert2";
 
@@ -15,6 +15,7 @@ const AdmissionProcess = () => {
      const { name, image, country, college_Details } = student;
      console.log(country);
 
+     const navigate = useNavigate();
 
      const handleSubmit = (e) => {
           e.preventDefault()
@@ -44,15 +45,17 @@ const AdmissionProcess = () => {
                .then(data => {
 
                     console.log(data);
+
                     if (data.insertedId) {
                          return Swal.fire({
                               title: 'Success!',
-                              text: 'Coffee Added Successfully',
+                              text: 'Successfully Admit',
                               icon: 'success',
-                              confirmButtonText: 'Cool'
+                              confirmButtonText: 'Success'
                          })
                     }
                })
+          navigate('/admission')
      }
 
 
@@ -110,9 +113,9 @@ const AdmissionProcess = () => {
                          </div>
                     </div>
                     <div className="mb-4">
-                                   <label htmlFor="country" className="block mb-2">Country:</label>
-                                   <input type="text" name="country" id="country" defaultValue={country} className="border rounded py-2 px-3 w-full" />
-                              </div>
+                         <label htmlFor="country" className="block mb-2">Country:</label>
+                         <input type="text" name="country" id="country" defaultValue={country} className="border rounded py-2 px-3 w-full" />
+                    </div>
                     <div className="mb-4">
                          <label htmlFor="CollegeDetails" className="block mb-2">University Details:</label>
                          <textarea defaultValue={college_Details} readOnly name="CollegeDetails" id="CollegeDetails" rows="4" cols="50" className="border rounded py-2 px-3 w-full"></textarea>
