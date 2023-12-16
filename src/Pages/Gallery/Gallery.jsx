@@ -31,7 +31,7 @@ const Gallery = () => {
             >
                 <SwiperSlide>
                     <img src={group1} alt="" />
-                    <h2 className="absolute card-hover text-lg text-gray-200 bottom-2">University of Oxford</h2>
+                    <h2 className="absolute card-hover text-lg text-gray-300 bottom-2">University of Oxford</h2>
                 </SwiperSlide>
                 <SwiperSlide>
                     <img src={group2} alt="" />

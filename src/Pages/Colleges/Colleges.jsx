@@ -15,7 +15,7 @@ const Colleges = () => {
      const navigate = useNavigate()
 
      useEffect(() => {
-          fetch('http://localhost:5000/college')
+          fetch('https://college-booking-server-mu-eight.vercel.app/college')
                .then(res => res.json())
                .then(data => setColleges(data))
      }, [])
@@ -32,10 +32,10 @@ const Colleges = () => {
      return (
           <div>
                <h1 className='text-cyan-400 text-center my-3 text-4xl'>Colleges</h1>
-               <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 container my-5'>
+               <div className='grid grid-cols-2 md:grid-cols-2 lg:grid-cols-3 gap-8 container my-5'>
                     {
-                         colleges.map(college => {
-                              return <div key={college._id} className="card card-compact w-96 bg-base-100 shadow-xl">
+                         colleges.map((college, id) => {
+                              return <div key={id} className={`card card-compact mx-auto md:w-96 w-40 mb-5 bg-base-100 transition-transform hover:scale-105 shadow-xl`}>
                                    <figure><img src={college.college_image} alt="Shoes" /></figure>
                                    <div className="card-body">
                                         <h2 className="card-title">{college.college_name}</h2>

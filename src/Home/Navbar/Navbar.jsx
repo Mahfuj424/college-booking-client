@@ -24,9 +24,9 @@ const Navbar = () => {
           <p className='text-lg hover:text-cyan-500 transition-all'><NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-cyan-500 border-cyan-500' : ''} to='/colleges'>Colleges</NavLink></p>
           <p className='text-lg hover:text-cyan-500 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-cyan-500 border-cyan-500' : ''} to='/admission'>Admission</NavLink>}</p>
           <p className='text-lg hover:text-cyan-500 transition-all'>{user && <NavLink className={({ isActive }) => isActive ? 'border-b-2 pb-2 text-cyan-500 border-cyan-500' : ''} to='/myCollege'>My College</NavLink>}</p>
-          
+
           <div className="form-control">
-               <input type="text" placeholder="Search" className="input input-bordered w-[150px] md:w-auto" />
+               <input type="text" placeholder="Search" className="input input-bordered input-info w-[150px] md:w-auto" />
                {/* <input onClick={handleSearch} className='button w-[100px]' type="submit" value="Search" /> */}
           </div>
           <p className='text-lg hover:text-cyan-500 transition-all '> {
@@ -43,7 +43,7 @@ const Navbar = () => {
      </div>
 
      return (
-          <div className='fixed md:bg-green-100 font-semibold pt-4 w-full z-10 opacity-80'>
+          <div className='fixed bg-green-100 font-semibold px-4 md:px-0 pt-4 w-full z-10 opacity-80'>
                <div className="navbar container p-0">
                     <div className="navbar-start">
                          <div className="dropdown">
@@ -55,7 +55,7 @@ const Navbar = () => {
                               </ul>
                          </div>
                          <Link to='/' className="text-xl  flex items-center cursor-pointer">
-                              <BsBook className='w-10 text-cyan-500' /> <span className='text-cyan-500 ms-2'>College Booking</span>
+                              <BsBook className='w-14 h-14 text-cyan-500' /> <span className='text-cyan-500 text-1xl ms-2'>Best Colleges</span>
                          </Link>
                     </div>
                     <div className="navbar-center hidden lg:flex">

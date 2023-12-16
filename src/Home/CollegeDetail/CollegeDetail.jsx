@@ -6,11 +6,12 @@ import { AuthContext } from "../../Componet/AuthProvider/AuthProvider";
 
 
 const CollegeDetail = ({ collegeData }) => {
+     
      const navigate = useNavigate()
 
      const { user } = useContext(AuthContext);
 
-     const handleCollegeDetails=(id) => {
+     const handleCollegeDetails = (id) => {
           if (!user?.email) {
                navigate('/login')
           }
@@ -21,7 +22,7 @@ const CollegeDetail = ({ collegeData }) => {
 
      return (
           <div>
-               <div key={_id} className="card card-compact w-96 bg-base-100 shadow-xl">
+               <div key={_id} className={`card card-compact mx-auto md:w-96 w-40 mb-5 bg-base-100 transition-transform hover:scale-105 shadow-xl`}>
                     <figure><img src={college_image} alt="Shoes" /></figure>
                     <div className="card-body">
                          <h2 className="card-title">{college_name}</h2>

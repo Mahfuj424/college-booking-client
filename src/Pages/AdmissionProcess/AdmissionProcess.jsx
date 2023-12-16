@@ -34,7 +34,7 @@ const AdmissionProcess = () => {
           console.log(myUniversity);
 
 
-          fetch('http://localhost:5000/myCollege', {
+          fetch('https://college-booking-server-mu-eight.vercel.app/myCollege', {
                method: "POST",
                headers: {
                     'content-type': 'application/json'

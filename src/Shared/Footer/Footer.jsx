@@ -10,7 +10,7 @@ const Footer = () => {
             <div className="footer p-10 bg-green-100 text-base-content">
                 <div>
                     <BsBook className='h-14 w-14 text-cyan-400' />
-                    <p className='text-lg'>College Booking <br /> ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
+                    <p className='text-lg'>Future Dream<br /> ACME Industries Ltd.<br />Providing reliable tech since 1992</p>
                 </div>
                 <div>
                     <span className="footer-title">Services</span>

@@ -1,6 +1,6 @@
 import {
      createBrowserRouter,
-   } from "react-router-dom";
+} from "react-router-dom";
 import Main from "../Layout/Main";
 import Home from "../../Home/Home/Home";
 import Colleges from "../../Pages/Colleges/Colleges";
@@ -12,46 +12,51 @@ import PrivetRoute from "../PrivetRoute/PrivetRoute";
 import CollegeDetails from "../../Pages/CollegeDetails/CollegeDetails";
 import AdmissionProcess from "../../Pages/AdmissionProcess/AdmissionProcess";
 import MyCollege from "../../Pages/MyCollege/MyCollege";
+import Rating from "../../Pages/Rating/Rating";
 
 const Router = createBrowserRouter([
      {
           path: '/',
           element: <Main />,
-          errorElement: <ErrorPage/>,
+          errorElement: <ErrorPage />,
           children: [
                {
                     path: '/',
-                    element: <Home/>
+                    element: <Home />
                },
                {
                     path: '/colleges',
-                    element: <Colleges/>
+                    element: <Colleges />
                },
                {
-                    path: '/admission', 
-                    element: <Admission/>
+                    path: '/admission',
+                    element: <Admission />
                },
                {
                     path: `/myCollege`,
-                    element: <MyCollege/>
+                    element: <MyCollege />
                },
                {
                     path: '/collegeDetails/:id',
                     element: <PrivetRoute><CollegeDetails /></PrivetRoute>,
-                    loader: ()=> fetch(`http://localhost:5000/college`)
+                    loader: () => fetch(`https://college-booking-server-mu-eight.vercel.app/college`)
                },
                {
                     path: '/admissionProcess/:id',
                     element: <AdmissionProcess />,
-                    loader: ()=> fetch(`http://localhost:5000/collegeName`)
+                    loader: () => fetch(`https://college-booking-server-mu-eight.vercel.app/collegeName`)
+               },
+               {
+                    path: '/rating',
+                    element: <Rating />
                },
                {
                     path: 'login',
-                    element: <Login/>
+                    element: <Login />
                },
                {
                     path: '/register',
-                    element: <Register/>
+                    element: <Register />
                }
           ]
      }

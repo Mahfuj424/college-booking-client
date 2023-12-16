@@ -15,13 +15,13 @@ const ExtraStudy = () => {
                     <div className='md:flex gap-10 mt-8 max-w-4xl mx-auto '>
                         {/* <img className='w-[400px]' src={groupStudy} alt="" /> */}
                         <div className='grid grid-cols-1 md:grid-cols-2 gap-5'>
-                            <div>
+                            <div className='md:ms-0 ms-8'>
 
-                                <p className='text-4xl'><span className='text-5xl font-bold text-cyan-400'>Courses From The</span> World’s <br /> Leading Experts</p>
-                                <p>Nullam suscipit id ante bibendum bibendum. Vivamus interdum gravida justo id venenatis. tempus velit sed, lobortis metus. Donec id tincidunt libero, eget dapibus quam. Aenean felis ex, blandit pretium pharetra eu.</p>
+                                <p className='text-4xl text-gray-800'><span className='text-5xl font-bold text-cyan-400'>Courses From The</span> World’s <br /> Leading Experts</p>
+                                <p className='text-gray-800'>Nullam suscipit id ante bibendum bibendum. Vivamus interdum gravida justo id venenatis. tempus velit sed, lobortis metus. Donec id tincidunt libero, eget dapibus quam. Aenean felis ex, blandit pretium pharetra eu.</p>
                                 <button className='button mt-5'>Sign Up Now</button>
                             </div>
-                            <div className='grid grid-cols-2 gap-5'>
+                            <div className='grid mx-auto grid-cols-2 gap-5'>
                                 <div className='border bg-white rounded-lg w-36 h-36 flex items-center justify-center'>
                                     <div><MdScience className='w-20 h-20' />
                                         <h2 className="absolute  text-lg text-black ">Science</h2>

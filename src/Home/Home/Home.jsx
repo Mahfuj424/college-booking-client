@@ -13,9 +13,9 @@ const Home = () => {
                <Banner />
                <Gallery/>
                <Graduation />
+               <College/>
                <ExtraStudy />
                <Career />
-               <College/>
           </div>
      );
 };

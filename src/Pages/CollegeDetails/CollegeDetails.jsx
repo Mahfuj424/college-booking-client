@@ -20,7 +20,7 @@ const CollegeDetails = () => {
             <h1 className='text-3xl text-cyan-400 text-center mt-5'>College Details</h1>
             <div className="hero container rounded-xl shadow-xl bg-green-100 my-10">
                 <div className="hero-content flex-col lg:flex-row-reverse">
-                    <img src={college_image} className="w-[50%] rounded-lg shadow-2xl" alt='Toy Image' />
+                    <img src={college_image} className="w-[50%] transition-transform hover:scale-105 rounded-lg shadow-2xl" alt='Toy Image' />
                     <div className='w-[50%] flex-col gap-3 pl-5'>
                         <h1 className="my-5 text-lg md:text-3xl"><span className='font-bold'>College Name:</span> {college_name}</h1>
                         <h2><span className='font-bold'>Admission Dates:</span></h2>
