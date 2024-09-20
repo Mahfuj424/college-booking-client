@@ -2,7 +2,6 @@ import  { useContext, useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FiGithub } from "react-icons/fi";
 import { FcGoogle } from "react-icons/fc";
-import { updateProfile } from 'firebase/auth';
 import { AuthContext } from '../../Componet/AuthProvider/AuthProvider';
 
 
@@ -84,7 +83,7 @@ const Register = () => {
                         <h1 className="text-5xl font-bold text-center">Please Register</h1>
 
                     </div>
-                    <div className="card flex-shrink-0 mx-auto md:w-96 w-80 transition-transform hover:scale-105 max-w-sm shadow-2xl bg-base-100">
+                    <div className="card flex-shrink-0 mx-auto md:w-[500px] w-80 transition-transform hover:scale-105 max-w-sm shadow-2xl bg-base-100">
                         <form onSubmit={handleSubmit} className="card-body">
                             <div className="form-control">
                                 <label className="label">
@@ -115,9 +114,9 @@ const Register = () => {
                             </div>
                             <p className='text-error'>{error}</p>
                             <div className="form-control mt-6">
-                                <button className="btn btn-info">Register</button>
+                                <button className="btn bg-[#52FFBF] hover:bg-[#52FFBF]">Register</button>
                             </div>
-                            <p>You have already account? <Link className='link link-info' to='/login'>Please Login</Link></p>
+                            <p>You have already account? <Link className='link font-semibold' to='/login'>Please Login</Link></p>
                             <div>
                                 <button className='button w-full ' onClick={handleGoogleUser}><span><FcGoogle/></span>Google</button>
                             </div>

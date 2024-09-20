@@ -22,7 +22,7 @@ const CollegeDetail = ({ collegeData }) => {
 
      return (
           <div>
-               <div key={_id} className={`card card-compact mx-auto md:w-96 w-40 mb-5 bg-base-100 transition-transform hover:scale-105 shadow-xl`}>
+               <div key={_id} className={`card card-compact mx-auto md:w-96 w-40 mb-5 bg-base-100 transition-all duration-300 hover:shadow-xl shadow-md`}>
                     <figure><img src={college_image} alt="Shoes" /></figure>
                     <div className="card-body">
                          <h2 className="card-title">{college_name}</h2>
